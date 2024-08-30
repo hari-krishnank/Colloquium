@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/img/favicon-32x32.png">
 </head>
-
 <body>
     <div class="app">
         <div class="screen join-screen active">
@@ -29,8 +27,8 @@
                 <button id="exit-chat">Exit</button>
             </div>
             <div class="messages">
-
-
+                
+                
             </div>
             <div class="typebox">
                 <input type="text" id="message-input">
@@ -38,20 +36,8 @@
             </div>
         </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js"></script>
-    <script>
-        // const socket = io('https://colloquium-virid.vercel.app', {
-        //     transports: ['websocket', 'polling']
-        // });
-        const socket = io({
-            path: '/api/socketio',
-        });
-        // const socket = io('http://localhost:5000', {
-        //     transports: ['websocket', 'polling']
-        // });
-    </script>
+   
+    <script src="socket.io/socket.io.js"></script>
     <script src="code.js"></script>
 </body>
-
 </html>
