@@ -41,8 +41,11 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js"></script>
     <script>
-        const socket = io('https://colloquium-virid.vercel.app', {
-            transports: ['websocket', 'polling']
+        // const socket = io('https://colloquium-virid.vercel.app', {
+        //     transports: ['websocket', 'polling']
+        // });
+        const socket = io({
+            path: '/api/socketio',
         });
         // const socket = io('http://localhost:5000', {
         //     transports: ['websocket', 'polling']
